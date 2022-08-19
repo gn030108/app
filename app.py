@@ -11,7 +11,7 @@ app.config['JSON_AS_ASCII'] = False
 def welcome():
     return render_template('index.html')
 
-@app.route('/login',methods = ['GET'])
+@app.route('/login',methods = ['PUT'])
 def login():
     return render_template("login.html")
 
