@@ -15,7 +15,7 @@ def welcome():
 def login():
     return render_template("login.html")
 
-@app.route('/get', methods=['GET'])
+@app.route('/put', methods=['PUT'])
 def get():
     f = open('SENSOR.json',"r")
     rf_json = f.read()
