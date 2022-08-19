@@ -11,11 +11,11 @@ app.config['JSON_AS_ASCII'] = False
 def welcome():
     return render_template('index.html')
 
-@app.route('/login',methods = ['GET'])
+@app.route('/login',methods = ['PUT'])
 def login():
     return render_template("login.html")
 
-@app.route('/get', methods=['GET'])
+@app.route('/put', methods=['PUT'])
 def get():
     f = open('SENSOR.json',"r")
     rf_json = f.read()
